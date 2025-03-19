@@ -29,25 +29,73 @@
             object-fit: cover;
         }
         .product-card .card-body {
-            background: #f8f9fa;
+            background: #e9ecef; /* Light gray background */
             padding: 20px;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
+        .why-choose-us {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Adds gap between elements */
+        }
+
         .why-choose-us .col-md-4 {
-            border: 2px solid #ddd;
+            border: 2px solid #ced4da; /* Light gray border */
             padding: 20px;
             border-radius: 10px;
-            background: #f9f9f9;
-            margin-bottom: 20px;
+            background: #f8f9fa; /* Very light gray background */
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            margin: 10px; /* Creates spacing between cards */
+        }
+
+
+        /* New Color Scheme */
+        .navbar {
+            background-color: #004d40 !important; /* Dark teal */
+        }
+        .bg-light {
+            background-color: #e0f2f1 !important; /* Very light teal */
+        }
+        .bg-white {
+            background-color: #f0fdfa !important; /* Off-white teal */
+        }
+        .btn-primary {
+            background-color: #00796b; /* Teal */
+            border-color: #00796b;
+        }
+        .btn-primary:hover {
+            background-color: #004d40; /* Darker teal */
+            border-color: #004d40;
+        }
+        .blockquote {
+            background-color: #b2dfdb; /* Light teal */
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+        }
+        .blockquote-footer {
+            color: #424242; /* Dark gray */
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #004d40; /* Dark teal */
+        }
+        .text-light {
+            color: #ffffff !important; /* White text */
+        }
+        .footer {
+            background-color: #004d40; /* Dark teal */
         }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Om Marketing</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -57,22 +105,19 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="py-5 text-center bg-light mt-5">
         <div class="container">
             <h1>Welcome to Om Marketing</h1>
-            <p>Your trusted dealer in Cement - Ambuja, ACC, and Cera.</p>
+            <p>The Next Generation of Construction Materials..</p>
         </div>
     </section>
 
-    <!-- Trust & Recognition Section -->
     <section id="trust" class="py-5 text-center bg-white">
         <div class="container">
             <h2 class="mb-4">Why Choose Us?</h2>
@@ -83,7 +128,7 @@
                 </div>
                 <div class="col-md-4">
                     <h4>Certified Dealer</h4>
-                    <p>Authorized distributor of Ambuja, ACC, and Cera construction products.</p>
+                    <p>Authorized dealer of Ambuja, ACC, and Cera construction products.</p>
                 </div>
                 <div class="col-md-4">
                     <h4>Trusted by Leading Contractors</h4>
@@ -93,7 +138,6 @@
         </div>
     </section>
 
-    <!-- Products Section -->
     <section id="products" class="py-5 text-center bg-light">
         <div class="container">
             <h2 class="mb-4">Our Products</h2>
@@ -121,8 +165,8 @@
                     <div class="card product-card">
                         <img src="https://i.ytimg.com/vi/7J5WZk91yPw/maxresdefault.jpg" class="card-img-top" alt="Cera Construction Chemicals">
                         <div class="card-body">
-                            <h5 class="card-title">Cera Construction Chemicals</h5>
-                            <p class="card-text">Specialized chemicals for construction, ensuring superior quality and performance in all building applications.</p>
+                            <h5 class="card-title">Cera Tiles & Chemicals</h5>
+                            <p class="card-text">Specialized chemicals & tiles for construction, ensuring superior quality and performance in all building applications.</p>
                         </div>
                     </div>
                 </div>
@@ -130,39 +174,7 @@
         </div>
     </section>
 
-    <!-- Testimonials Section (Carousel) -->
-    <section id="testimonials" class="py-5 text-center bg-white">
-        <div class="container">
-            <h2 class="mb-4">What Our Clients Say</h2>
-            <p>Hear from our satisfied customers.</p>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <blockquote class="blockquote">“Om Marketing provides the best quality cement products. Highly recommended!”</blockquote>
-                        <footer class="blockquote-footer">Rahul Sharma, Contractor</footer>
-                    </div>
-                    <div class="carousel-item">
-                        <blockquote class="blockquote">“Great service and reliable products. My go-to supplier for construction materials.”</blockquote>
-                        <footer class="blockquote-footer">Priya Verma, Civil Engineer</footer>
-                    </div>
-                    <div class="carousel-item">
-                        <blockquote class="blockquote">“High-quality cement and professional service. Will definitely recommend.”</blockquote>
-                        <footer class="blockquote-footer">Amit Patel, Builder</footer>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light text-center">
         <div class="container">
             <h2>Contact Us</h2>
@@ -173,8 +185,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center py-3 bg-dark text-light">
+    <footer class="text-center py-3 footer text-light">
         <p>&copy; 2025 Om Marketing. All rights reserved.</p>
     </footer>
 </body>
