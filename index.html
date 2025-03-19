@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Om Marketing - Cement Shop</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Marketing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Om Marketing</h1>
-      <p>Your Trusted Cement Supplier</p>
-    </div>
-  </header>
-
-  <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Welcome to Om Marketing! We are a trusted supplier of high-quality cement brands, including ACC Cement and Ambuja Cement. With years of experience, we ensure the best products for your construction needs.</p>
-    </div>
-  </section>
-
-  <section id="brands">
-    <div class="container">
-      <h2>Our Brands</h2>
-      <div class="brand-list">
-        <div class="brand">
-          <img src="acc-cement.jpg" alt="ACC Cement">
-          <h3>ACC Cement</h3>
-          <p>Known for its strength and durability, ACC Cement is a top choice for construction projects.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Om Marketing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="brand">
-          <img src="ambuja-cement.jpg" alt="Ambuja Cement">
-          <h3>Ambuja Cement</h3>
-          <p>Ambuja Cement offers high-quality cement with excellent performance and sustainability.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-5 text-center bg-light mt-5">
+        <div class="container">
+            <h1>Welcome to Om Marketing</h1>
+            <p>Your trusted dealer in Cement - Ambuja, ACC, and Cera.</p>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Visit us or get in touch for your cement needs:</p>
-      <p><strong>Address:</strong> 123 Main Street, City, State, PIN Code</p>
-      <p><strong>Phone:</strong> +91 12345 67890</p>
-      <p><strong>Email:</strong> info@ommarketing.com</p>
+    <!-- Carousel -->
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/800x400/?cement" class="d-block w-100" alt="Cement">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/800x400/?construction" class="d-block w-100" alt="Construction">
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/800x400/?building" class="d-block w-100" alt="Building">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
-  </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Om Marketing. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Products Section -->
+    <section id="products" class="py-5 text-center">
+        <div class="container">
+            <h2>Our Products</h2>
+            <p>We deal in high-quality cement products from trusted brands.</p>
+            <ul class="list-group">
+                <li class="list-group-item">Ambuja Cement</li>
+                <li class="list-group-item">ACC Cement</li>
+                <li class="list-group-item">Cera Cement</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Reach out to us for inquiries and orders.</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Email:</strong> ommarketing@example.com</p>
+            <p><strong>Address:</strong> Nashik, Maharashtra, India</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>&copy; 2025 Om Marketing. All rights reserved.</p>
+    </footer>
 </body>
 </html>
